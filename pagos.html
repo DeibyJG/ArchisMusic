@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestaña de Pago</title>
+    <link rel="stylesheet" href="./style/style_pagos.css">
+    <link rel="shortcut icon" href="./img/Fav-Icon.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <div class="pago-contenedor">
+        <h2>Información de Pago</h2>
+
+        <form action="#" method="POST" class="formulario-pago">
+            
+            <div class="campo-grupo">
+                <label for="numero-tarjeta">Número de Tarjeta</label>
+                <input type="text" id="numero-tarjeta" placeholder="XXXX XXXX XXXX XXXX" required maxlength="19">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="nombre-tarjeta">Nombre del Titular</label>
+                <input type="text" id="nombre-tarjeta" placeholder="Nombre en la tarjeta" required>
+            </div>
+
+            <div class="fila">
+                <div class="campo-grupo">
+                    <label for="fecha-exp">Fecha de Vencimiento</label>
+                    <input type="text" id="fecha-exp" placeholder="MM/AA" required maxlength="5">
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" placeholder="123" required maxlength="3">
+                </div>
+            </div>
+
+            <button type="submit" class="boton-pagar">Pagar Ahora</button>
+        </form>
+    </div>
+
+</body>
+</html>
